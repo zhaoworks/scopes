@@ -1,0 +1,24 @@
+{
+  "name": "@zhaoworks/scopes",
+  "description": "static and dynamic flagsets.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "7wf",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}
